@@ -2,7 +2,7 @@
 Contributors: afthemes
 Requires PHP: 5.6
 Tested up to: 6.6
-Stable tag: 3.5.0
+Stable tag: 4.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: news, blog, entertainment, one-column, two-columns, three-columns, left-sidebar, right-sidebar, custom-background, custom-menu, featured-images, full-width-template, custom-header, translation-ready, theme-options, threaded-comments
@@ -36,6 +36,16 @@ Newsium is a WordPress theme for the Best Responsive News Magazine that allows y
 Newsium includes support for Infinite Scroll in Jetpack.
 
 == Change log ==
+= 4.0.0 - Oct 25 2024 =
+* New - Import Starter Site Dashboard
+* New - Import Gutenberg Patterns Dashboard
+* New - Import Elementor Kits Dashboard
+* New - Customize Menu
+* New - AF themes Dashboard Menu
+* Update - Scripts improvements
+* Update - Block Style improvement
+* Fixed - Some styling glitch
+
 = 3.5.0 - Sep 11 2024 =
 * Update - Read Minutes Disabled by Default (Can be Enabled)
 * Option - Appearance -> Customize -> Theme Options -> Minutes Read Count
