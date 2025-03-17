@@ -386,8 +386,8 @@ function newsium_print_pre($args){
 
 }
 
-add_action( 'init', 'newsium_transltion_init');
+add_action( 'after_setup_theme', 'newsium_transltion_init');
 
 function newsium_transltion_init() {
-    load_theme_textdomain( 'newsium', get_template_directory()  . '/languages' );
+    load_theme_textdomain( 'newsium', false, get_template_directory()  . '/languages' );
 }
