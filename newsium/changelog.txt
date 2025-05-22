@@ -1,4 +1,9 @@
-### 4.1.0 - Nov 19 2024 =
+### 4.2.0 - May 22 2025
+* Update - Security improvement
+* Update - Block Style improvement
+* Fixed - Some styling glitch
+
+### 4.1.0 - Nov 19 2024
 * New - WP 6.7 Compatibility
 * Update - Dashboard improvements
 * Update - Scripts improvements
