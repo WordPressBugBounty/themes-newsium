@@ -15,11 +15,7 @@ if ( ! function_exists( 'newsium_recommended_plugins' ) ) :
     function newsium_recommended_plugins() {
 
         $plugins = array(
-            array(
-                'name'     => esc_html__( 'AF Companion', 'newsium' ),
-                'slug'     => 'af-companion',
-                'required' => false,
-            ),
+            
             array(
                 'name'     => esc_html__( 'Templatespare', 'newsium' ),
                 'slug'     => 'templatespare',
@@ -33,16 +29,6 @@ if ( ! function_exists( 'newsium_recommended_plugins' ) ) :
             array(
                 'name'     => esc_html__( 'Blockspare', 'newsium' ),
                 'slug'     => 'blockspare',
-                'required' => false,
-            ),
-            array(
-                'name'     => esc_html__( 'Latest Posts Block', 'newsium' ),
-                'slug'     => 'latest-posts-block-lite',
-                'required' => false,
-            ),
-            array(
-                'name'     => esc_html__( 'Magic Content Box', 'newsium' ),
-                'slug'     => 'magic-content-box-lite',
                 'required' => false,
             ),
             array(
