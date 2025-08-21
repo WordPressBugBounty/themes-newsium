@@ -2,7 +2,7 @@
 Contributors: afthemes
 Requires PHP: 5.6
 Tested up to: 6.8
-Stable tag: 4.2.2
+Stable tag: 4.2.3
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: news, blog, entertainment, one-column, two-columns, three-columns, left-sidebar, right-sidebar, custom-background, custom-menu, featured-images, full-width-template, custom-header, translation-ready, theme-options, threaded-comments
@@ -36,6 +36,11 @@ Newsium is a WordPress theme for the Best Responsive News Magazine that allows y
 Newsium includes support for Infinite Scroll in Jetpack.
 
 == Change log ==
+= 4.2.3 - Aug 21 2025 =
+* Update - Post navigation HTML structure updated for better styling
+* Update - Previous/Next post labels improved for translations (i18n)
+* Update - Screen reader text corrected to "Post navigation" for accessibility 
+
 = 4.2.2 - Jun 24 2025 =
 * Update - Default admin panel
 * Update - Recommneded plugins
