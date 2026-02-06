@@ -34,15 +34,13 @@ if(!is_front_page() && is_home()){
 }
 
 if ($post && is_singular()) {
-    $post_options = esc_attr(get_post_meta($post->ID, 'newsium-meta-content-alignment', true));
+    $post_options = esc_attr(get_post_meta(get_the_ID(), 'newsium-meta-content-alignment', true));
     if (!empty($post_options)) {
         $page_layout = $post_options;
     } else {
         $page_layout = $global_layout;
     }
 }
-
-
 
 
 
