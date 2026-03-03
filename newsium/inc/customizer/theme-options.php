@@ -16,7 +16,7 @@ require get_template_directory() . '/inc/customizer/frontpage-options.php';
 // Add Theme Options Panel.
 $wp_customize->add_panel('theme_option_panel',
     array(
-        'title' => esc_html__('Theme Options', 'newsium'),
+        'title' => __('Theme Options', 'newsium'),
         'priority' => 200,
         'capability' => 'edit_theme_options',
     )
@@ -26,7 +26,7 @@ $wp_customize->add_panel('theme_option_panel',
 // Preloader Section.
 $wp_customize->add_section('site_preloader_settings',
     array(
-        'title' => esc_html__('Preloader Options', 'newsium'),
+        'title' => __('Preloader Options', 'newsium'),
         'priority' => 4,
         'capability' => 'edit_theme_options',
         'panel' => 'theme_option_panel',
@@ -44,7 +44,7 @@ $wp_customize->add_setting('enable_site_preloader',
 
 $wp_customize->add_control('enable_site_preloader',
     array(
-        'label' => esc_html__('Enable preloader', 'newsium'),
+        'label' => __('Enable preloader', 'newsium'),
         'section' => 'site_preloader_settings',
         'type' => 'checkbox',
         'priority' => 10,
@@ -54,7 +54,7 @@ $wp_customize->add_control('enable_site_preloader',
 // Breadcrumb Section.
 $wp_customize->add_section('site_breadcrumb_settings',
     array(
-        'title'      => esc_html__('Breadcrumb Options', 'newsium'),
+        'title'      => __('Breadcrumb Options', 'newsium'),
         'priority'   => 50,
         'capability' => 'edit_theme_options',
         'panel'      => 'theme_option_panel',
@@ -72,7 +72,7 @@ $wp_customize->add_setting('enable_breadcrumb',
 
 $wp_customize->add_control('enable_breadcrumb',
     array(
-        'label'    => esc_html__('Show breadcrumbs', 'newsium'),
+        'label'    => __('Show breadcrumbs', 'newsium'),
         'section'  => 'site_breadcrumb_settings',
         'type'     => 'checkbox',
         'priority' => 10,
@@ -91,15 +91,15 @@ $wp_customize->add_setting('select_breadcrumb_mode',
 
 $wp_customize->add_control( 'select_breadcrumb_mode',
     array(
-        'label'       => esc_html__('Select Breadcrumbs', 'newsium'),
-        'description' => esc_html__("Please ensure that you have enabled the plugin's breadcrumbs before choosing other than Default", 'newsium'),
+        'label'       => __('Select Breadcrumbs', 'newsium'),
+        'description' => __("Please ensure that you have enabled the plugin's breadcrumbs before choosing other than Default", 'newsium'),
         'section'     => 'site_breadcrumb_settings',
         'type'        => 'select',
         'choices'               => array(
-            'default' => esc_html__( 'Default', 'newsium' ),
-            'yoast' => esc_html__( 'Yoast SEO', 'newsium' ),
-            'rankmath' => esc_html__( 'Rank Math', 'newsium' ),
-            'bcn' => esc_html__( 'NavXT', 'newsium' ),
+            'default' => __( 'Default', 'newsium' ),
+            'yoast' => __( 'Yoast SEO', 'newsium' ),
+            'rankmath' => __( 'Rank Math', 'newsium' ),
+            'bcn' => __( 'NavXT', 'newsium' ),
         ),
         'priority'    => 100,
     ));
@@ -114,7 +114,7 @@ $wp_customize->add_control( 'select_breadcrumb_mode',
 // Layout Section.
     $wp_customize->add_section('site_layout_settings',
         array(
-            'title' => esc_html__('Global Settings', 'newsium'),
+            'title' => __('Global Settings', 'newsium'),
             'priority' => 9,
             'capability' => 'edit_theme_options',
             'panel' => 'theme_option_panel',
@@ -134,13 +134,13 @@ $wp_customize->add_control( 'select_breadcrumb_mode',
     
     $wp_customize->add_control('global_content_alignment',
         array(
-            'label' => esc_html__('Global Content Alignment', 'newsium'),
+            'label' => __('Global Content Alignment', 'newsium'),
             'section' => 'site_layout_settings',
             'type' => 'select',
             'choices' => array(
-                'align-content-left' => esc_html__('Content - Primary sidebar', 'newsium'),
-                'align-content-right' => esc_html__('Primary sidebar - Content', 'newsium'),
-                'full-width-content' => esc_html__('Full width content', 'newsium')
+                'align-content-left' => __('Content - Primary sidebar', 'newsium'),
+                'align-content-right' => __('Primary sidebar - Content', 'newsium'),
+                'full-width-content' => __('Full width content', 'newsium')
             ),
             'priority' => 130,
         ));
@@ -156,12 +156,12 @@ $wp_customize->add_control( 'select_breadcrumb_mode',
     
     $wp_customize->add_control('global_show_categories',
         array(
-            'label' => esc_html__('Post Categories', 'newsium'),
+            'label' => __('Post Categories', 'newsium'),
             'section' => 'site_layout_settings',
             'type' => 'select',
             'choices' => array(
-                'yes' => esc_html__('Show', 'newsium'),
-                'no' => esc_html__('Hide', 'newsium'),
+                'yes' => __('Show', 'newsium'),
+                'no' => __('Hide', 'newsium'),
             
             ),
             'priority' => 130,
@@ -179,12 +179,12 @@ $wp_customize->add_control( 'select_breadcrumb_mode',
     
     $wp_customize->add_control('global_widget_excerpt_setting',
         array(
-            'label' => esc_html__('Widget Excerpt Mode', 'newsium'),
+            'label' => __('Widget Excerpt Mode', 'newsium'),
             'section' => 'site_layout_settings',
             'type' => 'select',
             'choices' => array(
-                'trimmed-content' => esc_html__('Trimmed Content', 'newsium'),
-                'default-excerpt' => esc_html__('Default Excerpt', 'newsium'),
+                'trimmed-content' => __('Trimmed Content', 'newsium'),
+                'default-excerpt' => __('Default Excerpt', 'newsium'),
             
             ),
             'priority' => 130,
@@ -200,7 +200,7 @@ $wp_customize->add_control( 'select_breadcrumb_mode',
 // Frontpage Section.
     $wp_customize->add_section('header_options_settings',
         array(
-            'title' => esc_html__('Header Options', 'newsium'),
+            'title' => __('Header Options', 'newsium'),
             'priority' => 49,
             'capability' => 'edit_theme_options',
             'panel' => 'theme_option_panel',
@@ -219,7 +219,7 @@ $wp_customize->add_control( 'select_breadcrumb_mode',
     );
     $wp_customize->add_control('show_date_section',
         array(
-            'label' => esc_html__('Show date on top header', 'newsium'),
+            'label' => __('Show date on top header', 'newsium'),
             'section' => 'header_options_settings',
             'type' => 'checkbox',
             'priority' => 10
@@ -238,7 +238,7 @@ $wp_customize->add_control( 'select_breadcrumb_mode',
     
     $wp_customize->add_control('show_social_menu_section',
         array(
-            'label' => esc_html__('Show social menu on top header', 'newsium'),
+            'label' => __('Show social menu on top header', 'newsium'),
             'section' => 'header_options_settings',
             'type' => 'checkbox',
             'priority' => 11,
@@ -258,7 +258,7 @@ $wp_customize->add_control( 'select_breadcrumb_mode',
     
     $wp_customize->add_control('show_secondary_menu_section',
         array(
-            'label' => esc_html__('Show Secondary menu', 'newsium'),
+            'label' => __('Show Secondary menu', 'newsium'),
             'section' => 'header_options_settings',
             'type' => 'checkbox',
             'priority' => 11
@@ -277,7 +277,7 @@ $wp_customize->add_control( 'select_breadcrumb_mode',
     );
     $wp_customize->add_control('enable_sticky_header_option',
         array(
-            'label' => esc_html__('Enable Sticky Header', 'newsium'),
+            'label' => __('Enable Sticky Header', 'newsium'),
             'section' => 'header_options_settings',
             'type' => 'checkbox',
             'priority' => 11
@@ -295,12 +295,12 @@ $wp_customize->add_setting('global_show_home_menu',
 
 $wp_customize->add_control('global_show_home_menu',
     array(
-        'label' => esc_html__('Home Menu Icon', 'newsium'),
+        'label' => __('Home Menu Icon', 'newsium'),
         'section' => 'header_options_settings',
         'type' => 'select',
         'choices' => array(
-            'yes' => esc_html__('Show', 'newsium'),
-            'no' => esc_html__('Hide', 'newsium'),
+            'yes' => __('Show', 'newsium'),
+            'no' => __('Hide', 'newsium'),
 
         ),
         'priority' => 11,
@@ -327,7 +327,7 @@ $wp_customize->add_control(
         $wp_customize,
         'popular_tags_section_title',
         array(
-            'label' => esc_html__('Popular Tags Section ', 'newsium'),
+            'label' => __('Popular Tags Section ', 'newsium'),
             'section' => 'header_options_settings',
             'priority' => 100,
 
@@ -347,7 +347,7 @@ $wp_customize->add_setting('show_popular_tags_section',
 
 $wp_customize->add_control('show_popular_tags_section',
     array(
-        'label' => esc_html__('Enable Popular Tags Section', 'newsium'),
+        'label' => __('Enable Popular Tags Section', 'newsium'),
         'section' => 'header_options_settings',
         'type' => 'checkbox',
         'priority' => 100,
@@ -367,7 +367,7 @@ $wp_customize->add_setting('show_popular_tags_title',
 
 $wp_customize->add_control('show_popular_tags_title',
     array(
-        'label' => esc_html__('Section Title', 'newsium'),
+        'label' => __('Section Title', 'newsium'),
         'section' => 'header_options_settings',
         'type' => 'text',
         'priority' => 100,
@@ -394,7 +394,7 @@ $wp_customize->add_control(
         $wp_customize,
         'custom_link_section_title',
         array(
-            'label' => esc_html__('Custom Link Section ', 'newsium'),
+            'label' => __('Custom Link Section ', 'newsium'),
             'section' => 'header_options_settings',
             'priority' => 100,
 
@@ -413,7 +413,7 @@ $wp_customize->add_setting('show_watch_online_section',
 
 $wp_customize->add_control('show_watch_online_section',
     array(
-        'label' => esc_html__('Enable Watch Online Section', 'newsium'),
+        'label' => __('Enable Watch Online Section', 'newsium'),
         'section' => 'header_options_settings',
         'type' => 'checkbox',
         'priority' => 100,
@@ -432,7 +432,7 @@ $wp_customize->add_setting('aft_custom_title',
 );
 $wp_customize->add_control('aft_custom_title',
     array(
-        'label' => esc_html__('Title', 'newsium'),
+        'label' => __('Title', 'newsium'),
         'section' => 'header_options_settings',
         'type' => 'text',
         'priority' => 130,
@@ -450,7 +450,7 @@ $wp_customize->add_setting('aft_custom_link',
 );
 $wp_customize->add_control('aft_custom_link',
     array(
-        'label' => esc_html__('Button Link', 'newsium'),
+        'label' => __('Button Link', 'newsium'),
         'section' => 'header_options_settings',
         'type' => 'text',
         'priority' => 130,
@@ -468,7 +468,7 @@ $wp_customize->add_control('aft_custom_link',
 // Sidebar Section.
 $wp_customize->add_section('site_sidebar_settings',
     array(
-        'title'      => esc_html__('Sidebar Settings', 'newsium'),
+        'title'      => __('Sidebar Settings', 'newsium'),
         'priority'   => 50,
         'capability' => 'edit_theme_options',
         'panel'      => 'theme_option_panel',
@@ -486,7 +486,7 @@ $wp_customize->add_setting('frontpage_sticky_sidebar',
 
 $wp_customize->add_control('frontpage_sticky_sidebar',
     array(
-        'label'    => esc_html__('Make Sidebar Sticky', 'newsium'),
+        'label'    => __('Make Sidebar Sticky', 'newsium'),
         'section'  => 'site_sidebar_settings',
         'type'     => 'checkbox',
         'priority' => 130,
@@ -505,12 +505,12 @@ $wp_customize->add_setting('frontpage_sticky_sidebar_position',
 
 $wp_customize->add_control( 'frontpage_sticky_sidebar_position',
     array(
-        'label'       => esc_html__('Sidebar Sticky Position', 'newsium'),
+        'label'       => __('Sidebar Sticky Position', 'newsium'),
         'section'     => 'site_sidebar_settings',
         'type'        => 'select',
         'choices'               => array(
-            'sidebar-sticky-top' => esc_html__( 'Top', 'newsium' ),
-            'sidebar-sticky-bottom' => esc_html__( 'Bottom', 'newsium' ),
+            'sidebar-sticky-top' => __( 'Top', 'newsium' ),
+            'sidebar-sticky-bottom' => __( 'Bottom', 'newsium' ),
         ),
         'priority'    => 130,
         //'active_callback' => 'frontpage_sticky_sidebar_status'
@@ -528,7 +528,7 @@ $wp_customize->add_control( 'frontpage_sticky_sidebar_position',
 // Global Section.
 $wp_customize->add_section('site_comment_count_settings',
     array(
-        'title' => esc_html__('Comment Count', 'newsium'),
+        'title' => __('Comment Count', 'newsium'),
         'priority' => 50,
         'capability' => 'edit_theme_options',
         'panel' => 'theme_option_panel',
@@ -546,12 +546,12 @@ $wp_customize->add_setting('global_show_comment_count',
 
 $wp_customize->add_control('global_show_comment_count',
     array(
-        'label' => esc_html__('Comment Count', 'newsium'),
+        'label' => __('Comment Count', 'newsium'),
         'section' => 'site_comment_count_settings',
         'type' => 'select',
         'choices' => array(
-            'yes' => esc_html__('Show', 'newsium'),
-            'no' => esc_html__('Hide', 'newsium'),
+            'yes' => __('Show', 'newsium'),
+            'no' => __('Hide', 'newsium'),
 
         ),
         'priority' => 130,
@@ -565,7 +565,7 @@ $wp_customize->add_control('global_show_comment_count',
 // Global Section.
 $wp_customize->add_section('site_min_read_settings',
     array(
-        'title' => esc_html__('Minutes Read Count', 'newsium'),
+        'title' => __('Minutes Read Count', 'newsium'),
         'priority' => 50,
         'capability' => 'edit_theme_options',
         'panel' => 'theme_option_panel',
@@ -584,12 +584,12 @@ $wp_customize->add_setting('global_show_min_read',
 
 $wp_customize->add_control('global_show_min_read',
     array(
-        'label' => esc_html__('Minutes Read Count', 'newsium'),
+        'label' => __('Minutes Read Count', 'newsium'),
         'section' => 'site_min_read_settings',
         'type' => 'select',
         'choices' => array(
-            'yes' => esc_html__('Show', 'newsium'),
-            'no' => esc_html__('Hide', 'newsium'),
+            'yes' => __('Show', 'newsium'),
+            'no' => __('Hide', 'newsium'),
 
         ),
         'priority' => 130,
@@ -601,7 +601,7 @@ $wp_customize->add_control('global_show_min_read',
 // Global Section.
 $wp_customize->add_section('site_post_date_author_settings',
     array(
-        'title' => esc_html__('Date and Author', 'newsium'),
+        'title' => __('Date and Author', 'newsium'),
         'priority' => 50,
         'capability' => 'edit_theme_options',
         'panel' => 'theme_option_panel',
@@ -620,14 +620,14 @@ $wp_customize->add_setting('global_post_date_author_setting',
 
 $wp_customize->add_control('global_post_date_author_setting',
     array(
-        'label' => esc_html__('Date and Author', 'newsium'),
+        'label' => __('Date and Author', 'newsium'),
         'section' => 'site_post_date_author_settings',
         'type' => 'select',
         'choices' => array(
-            'show-date-author' => esc_html__('Show Date and Author', 'newsium'),
-            'show-date-only' => esc_html__('Show Date Only', 'newsium'),
-            'show-author-only' => esc_html__('Show Author Only', 'newsium'),
-            'hide-date-author' => esc_html__('Hide All', 'newsium'),
+            'show-date-author' => __('Show Date and Author', 'newsium'),
+            'show-date-only' => __('Show Date Only', 'newsium'),
+            'show-author-only' => __('Show Author Only', 'newsium'),
+            'hide-date-author' => __('Hide All', 'newsium'),
         ),
         'priority' => 130,
     ));
@@ -644,12 +644,12 @@ $wp_customize->add_setting('global_date_display_setting',
 
 $wp_customize->add_control('global_date_display_setting',
     array(
-        'label' => esc_html__('Date Format', 'newsium'),
+        'label' => __('Date Format', 'newsium'),
         'section' => 'site_post_date_author_settings',
         'type' => 'select',
         'choices' => array(
-            'theme-date' => esc_html__('Date Format by Theme', 'newsium'),
-            'default-date' => esc_html__('WordPress Default Date Format', 'newsium'),
+            'theme-date' => __('Date Format by Theme', 'newsium'),
+            'default-date' => __('WordPress Default Date Format', 'newsium'),
 
         ),
         'priority' => 130,
@@ -665,7 +665,7 @@ $wp_customize->add_control('global_date_display_setting',
 // Single Section.
 $wp_customize->add_section('site_single_posts_settings',
     array(
-        'title' => esc_html__('Single Post', 'newsium'),
+        'title' => __('Single Post', 'newsium'),
         'priority' => 50,
         'capability' => 'edit_theme_options',
         'panel' => 'theme_option_panel',
@@ -695,7 +695,7 @@ $wp_customize->add_control('single_show_featured_image',
 // Single Section.
 $wp_customize->add_section('site_single_related_posts_settings',
     array(
-        'title' => esc_html__('Related Posts', 'newsium'),
+        'title' => __('Related Posts', 'newsium'),
         'priority' => 50,
         'capability' => 'edit_theme_options',
         'panel' => 'theme_option_panel',
@@ -749,7 +749,7 @@ $wp_customize->add_control('single_related_posts_title',
 // Archive Section.
 $wp_customize->add_section('site_archive_settings',
     array(
-        'title' => esc_html__('Archive Settings', 'newsium'),
+        'title' => __('Archive Settings', 'newsium'),
         'priority' => 50,
         'capability' => 'edit_theme_options',
         'panel' => 'theme_option_panel',
@@ -767,13 +767,13 @@ $wp_customize->add_setting('archive_layout',
 
 $wp_customize->add_control('archive_layout',
     array(
-        'label' => esc_html__('Archive layout', 'newsium'),
-        'description' => esc_html__('Select layout for archive', 'newsium'),
+        'label' => __('Archive layout', 'newsium'),
+        'description' => __('Select layout for archive', 'newsium'),
         'section' => 'site_archive_settings',
         'type' => 'select',
         'choices' => array(
-            'archive-layout-list' => esc_html__('List', 'newsium'),
-            'archive-layout-grid' => esc_html__('Grid', 'newsium'),
+            'archive-layout-list' => __('List', 'newsium'),
+            'archive-layout-grid' => __('Grid', 'newsium'),
         ),
         'priority' => 130,
     ));
@@ -786,7 +786,7 @@ $wp_customize->add_control('archive_layout',
 // Footer Section.
 $wp_customize->add_section('frontpage_latest_posts_settings',
     array(
-        'title' => esc_html__('You May Have Missed', 'newsium'),
+        'title' => __('You May Have Missed', 'newsium'),
         'priority' => 50,
         'capability' => 'edit_theme_options',
         'panel' => 'theme_option_panel',
@@ -821,7 +821,7 @@ $wp_customize->add_setting('frontpage_latest_posts_section_title',
 );
 $wp_customize->add_control('frontpage_latest_posts_section_title',
     array(
-        'label' => esc_html__('Posts Section Title', 'newsium'),
+        'label' => __('Posts Section Title', 'newsium'),
         'section' => 'frontpage_latest_posts_settings',
         'type' => 'text',
         'priority' => 100,
@@ -836,7 +836,7 @@ $wp_customize->add_control('frontpage_latest_posts_section_title',
 // Footer Section.
 $wp_customize->add_section('site_footer_settings',
     array(
-        'title' => esc_html__('Footer', 'newsium'),
+        'title' => __('Footer', 'newsium'),
         'priority' => 50,
         'capability' => 'edit_theme_options',
         'panel' => 'theme_option_panel',

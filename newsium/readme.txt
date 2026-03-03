@@ -2,7 +2,7 @@
 Contributors: afthemes
 Requires PHP: 5.0
 Tested up to: 6.9
-Stable tag: 4.2.5.1
+Stable tag: 4.2.9
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: news, blog, entertainment, one-column, two-columns, three-columns, left-sidebar, right-sidebar, custom-background, custom-menu, featured-images, full-width-template, custom-header, translation-ready, theme-options, threaded-comments
@@ -17,7 +17,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 Newsium is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
 Underscores is distributed under the terms of the GNU GPL v2 or later.
 
-Newsium WordPress Theme, Copyright 2018 AF themes
+Newsium WordPress Theme, Copyright 2026 AF themes
 Newsium is distributed under the terms of the GNU GPL v2 or later.
 
 == Description ==
@@ -36,6 +36,21 @@ Newsium is a WordPress theme for the Best Responsive News Magazine that allows y
 Newsium includes support for Infinite Scroll in Jetpack.
 
 == Change log ==
+= 4.2.9 - Mar 03 2026 =
+* Update - Customizer optimization
+* Update - German language file
+* Update - Arabic language file
+* Update - French language file
+* Update - Italian language file
+* Update - Japanese language file
+* Update - Polish language file
+* Update - Portugese language file
+* Update - Spanish language file
+* Update - Dutch language file
+* Update - Russian language file
+* Update - Ukranian language file
+* Update - Swedish language file 
+
 = 4.2.2 - Jun 24 2025 =
 * Update - Default admin panel
 * Update - Recommneded plugins

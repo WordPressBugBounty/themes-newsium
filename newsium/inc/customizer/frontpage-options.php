@@ -18,7 +18,7 @@ $default = newsium_get_default_theme_options();
 // Add Frontpage Options Panel.
 $wp_customize->add_panel('frontpage_option_panel',
     array(
-        'title' => esc_html__('Frontpage Options', 'newsium'),
+        'title' => __('Frontpage Options', 'newsium'),
         'priority' => 199,
         'capability' => 'edit_theme_options',
     )
@@ -28,7 +28,7 @@ $wp_customize->add_panel('frontpage_option_panel',
 // Advertisement Section.
 $wp_customize->add_section('frontpage_advertisement_settings',
     array(
-        'title' => esc_html__('Banner Advertisement', 'newsium'),
+        'title' => __('Banner Advertisement', 'newsium'),
         'priority' => 50,
         'capability' => 'edit_theme_options',
         'panel' => 'frontpage_option_panel',
@@ -49,8 +49,8 @@ $wp_customize->add_setting('banner_advertisement_section',
 $wp_customize->add_control(
     new WP_Customize_Cropped_Image_Control($wp_customize, 'banner_advertisement_section',
         array(
-            'label' => esc_html__('Banner Section Advertisement', 'newsium'),
-            'description' => sprintf(esc_html__('Recommended Size %1$s px X %2$s px', 'newsium'), 930, 100),
+            'label' => __('Banner Section Advertisement', 'newsium'),
+            'description' => sprintf(__('Recommended Size %1$s px X %2$s px', 'newsium'), 930, 100),
             'section' => 'frontpage_advertisement_settings',
             'width' => 930,
             'height' => 100,
@@ -71,7 +71,7 @@ $wp_customize->add_setting('banner_advertisement_section_url',
 );
 $wp_customize->add_control('banner_advertisement_section_url',
     array(
-        'label' => esc_html__('URL Link', 'newsium'),
+        'label' => __('URL Link', 'newsium'),
         'section' => 'frontpage_advertisement_settings',
         'type' => 'text',
         'priority' => 130,
@@ -88,7 +88,7 @@ $wp_customize->add_setting('banner_advertisement_open_on_new_tab',
 );
 $wp_customize->add_control('banner_advertisement_open_on_new_tab',
     array(
-        'label' => esc_html__('Open in new tab', 'newsium'),
+        'label' => __('Open in new tab', 'newsium'),
         'section' => 'frontpage_advertisement_settings',
         'type' => 'checkbox',
         'priority' => 130,
@@ -107,13 +107,13 @@ $wp_customize->add_setting('banner_advertisement_scope',
 
 $wp_customize->add_control('banner_advertisement_scope',
     array(
-        'label' => esc_html__('Show banner advertisement on', 'newsium'),
-        'description' => esc_html__('Select scope to display on banner advertisement section', 'newsium'),
+        'label' => __('Show banner advertisement on', 'newsium'),
+        'description' => __('Select scope to display on banner advertisement section', 'newsium'),
         'section' => 'frontpage_advertisement_settings',
         'type' => 'select',
         'choices' => array(
-            'front-page-only' => esc_html__('Show on Homepage only', 'newsium'),
-            'site-wide' => esc_html__('Show sitewide', 'newsium'),
+            'front-page-only' => __('Show on Homepage only', 'newsium'),
+            'site-wide' => __('Show sitewide', 'newsium'),
         ),
         'priority' => 130,
 
@@ -125,7 +125,7 @@ $wp_customize->add_control('banner_advertisement_scope',
 //=================================
 $wp_customize->add_section('newsium_flash_posts_section_settings',
     array(
-        'title' => esc_html__('Exclusive Posts', 'newsium'),
+        'title' => __('Exclusive Posts', 'newsium'),
         'priority' => 50,
         'capability' => 'edit_theme_options',
         'panel' => 'frontpage_option_panel',
@@ -142,7 +142,7 @@ $wp_customize->add_setting('show_flash_news_section',
 
 $wp_customize->add_control('show_flash_news_section',
     array(
-        'label' => esc_html__('Enable Exclusive Posts Section', 'newsium'),
+        'label' => __('Enable Exclusive Posts Section', 'newsium'),
         'section' => 'newsium_flash_posts_section_settings',
         'type' => 'checkbox',
         'priority' => 22,
@@ -161,7 +161,7 @@ $wp_customize->add_setting('flash_news_title',
 
 $wp_customize->add_control('flash_news_title',
     array(
-        'label' => esc_html__('Exclusive News Title', 'newsium'),
+        'label' => __('Exclusive News Title', 'newsium'),
         'section' => 'newsium_flash_posts_section_settings',
         'type' => 'text',
         'priority' => 23,
@@ -181,7 +181,7 @@ $wp_customize->add_setting('flash_news_subtitle',
 
 $wp_customize->add_control('flash_news_subtitle',
     array(
-        'label' => esc_html__('Exclusive News Subtitle', 'newsium'),
+        'label' => __('Exclusive News Subtitle', 'newsium'),
         'section' => 'newsium_flash_posts_section_settings',
         'type' => 'text',
         'priority' => 23,
@@ -202,8 +202,8 @@ $wp_customize->add_setting('select_flash_news_category',
 
 $wp_customize->add_control(new Newsium_Dropdown_Taxonomies_Control($wp_customize, 'select_flash_news_category',
     array(
-        'label' => esc_html__('Exclusive Posts Category', 'newsium'),
-        'description' => esc_html__('Posts to be shown on trending posts ', 'newsium'),
+        'label' => __('Exclusive Posts Category', 'newsium'),
+        'description' => __('Posts to be shown on trending posts ', 'newsium'),
         'section' => 'newsium_flash_posts_section_settings',
         'type' => 'dropdown-taxonomies',
         'taxonomy' => 'category',
@@ -221,7 +221,7 @@ $wp_customize->add_control(new Newsium_Dropdown_Taxonomies_Control($wp_customize
 // Main banner Sider Section.
 $wp_customize->add_section('frontpage_main_banner_section_settings',
     array(
-        'title' => esc_html__('Main Banner Section', 'newsium'),
+        'title' => __('Main Banner Section', 'newsium'),
         'priority' => 50,
         'capability' => 'edit_theme_options',
         'panel' => 'frontpage_option_panel',
@@ -241,7 +241,7 @@ $wp_customize->add_control(
         $wp_customize,
         'main_banner_section_title',
         array(
-            'label' => esc_html__('Banner Section ', 'newsium'),
+            'label' => __('Banner Section ', 'newsium'),
             'section' => 'frontpage_main_banner_section_settings',
             'priority' => 100,
 
@@ -260,7 +260,7 @@ $wp_customize->add_setting('show_main_news_section',
 
 $wp_customize->add_control('show_main_news_section',
     array(
-        'label' => esc_html__('Enable Main Banner Section', 'newsium'),
+        'label' => __('Enable Main Banner Section', 'newsium'),
         'section' => 'frontpage_main_banner_section_settings',
         'type' => 'checkbox',
         'priority' => 100,
@@ -283,12 +283,12 @@ $wp_customize->add_setting('select_default_carousel_column',
 
 $wp_customize->add_control('select_default_carousel_column',
     array(
-        'label' => esc_html__('Select Carousel Column', 'newsium'),
+        'label' => __('Select Carousel Column', 'newsium'),
         'section' => 'frontpage_main_banner_section_settings',
         'type' => 'select',
         'choices' => array(
-            'carousel-2' => esc_html__("Default - Two Column", 'newsium'),
-            'carousel-3' => esc_html__("Three Column", 'newsium'),
+            'carousel-2' => __("Default - Two Column", 'newsium'),
+            'carousel-3' => __("Three Column", 'newsium'),
 
         ),
         'priority' => 100,
@@ -309,8 +309,8 @@ $wp_customize->add_setting('select_slider_news_category',
 
 $wp_customize->add_control(new Newsium_Dropdown_Taxonomies_Control($wp_customize, 'select_slider_news_category',
     array(
-        'label' => esc_html__('Category', 'newsium'),
-        'description' => esc_html__('Posts to be shown on main slider section', 'newsium'),
+        'label' => __('Category', 'newsium'),
+        'description' => __('Posts to be shown on main slider section', 'newsium'),
         'section' => 'frontpage_main_banner_section_settings',
         'type' => 'dropdown-taxonomies',
         'taxonomy' => 'category',
@@ -333,7 +333,7 @@ $wp_customize->add_control(
         $wp_customize,
         'trending_carousel_section_title',
         array(
-            'label' => esc_html__('Trending Section ', 'newsium'),
+            'label' => __('Trending Section ', 'newsium'),
             'section' => 'frontpage_main_banner_section_settings',
             'priority' => 100,
             'active_callback' => 'newsium_main_banner_section_status'
@@ -352,7 +352,7 @@ $wp_customize->add_setting('show_trending_carousel_section',
 
 $wp_customize->add_control('show_trending_carousel_section',
     array(
-        'label' => esc_html__('Enable Trending Carousel Section', 'newsium'),
+        'label' => __('Enable Trending Carousel Section', 'newsium'),
         'section' => 'frontpage_main_banner_section_settings',
         'type' => 'checkbox',
         'priority' => 100,
@@ -372,12 +372,12 @@ $wp_customize->add_setting('select_trending_carousel_section_mode',
 
 $wp_customize->add_control('select_trending_carousel_section_mode',
     array(
-        'label' => esc_html__('Select Trending Carousel Position', 'newsium'),
+        'label' => __('Select Trending Carousel Position', 'newsium'),
         'section' => 'frontpage_main_banner_section_settings',
         'type' => 'select',
         'choices' => array(
-            'left' => esc_html__("Left", 'newsium'),
-            'right' => esc_html__("Right", 'newsium'),
+            'left' => __("Left", 'newsium'),
+            'right' => __("Right", 'newsium'),
 
 
         ),
@@ -406,8 +406,8 @@ $wp_customize->add_setting('select_trending_carousel_category',
 
 $wp_customize->add_control(new Newsium_Dropdown_Taxonomies_Control($wp_customize, 'select_trending_carousel_category',
     array(
-        'label' => esc_html__('Category', 'newsium'),
-        'description' => esc_html__('Posts to be shown on main slider section', 'newsium'),
+        'label' => __('Category', 'newsium'),
+        'description' => __('Posts to be shown on main slider section', 'newsium'),
         'section' => 'frontpage_main_banner_section_settings',
         'type' => 'dropdown-taxonomies',
         'taxonomy' => 'category',
@@ -434,7 +434,7 @@ $wp_customize->add_setting('disable_main_banner_on_blog_archive',
 
 $wp_customize->add_control('disable_main_banner_on_blog_archive',
     array(
-        'label' => esc_html__('Disable Main Banner section on Static Posts page', 'newsium'),
+        'label' => __('Disable Main Banner section on Static Posts page', 'newsium'),
         'section' => 'frontpage_main_banner_section_settings',
         'type' => 'checkbox',
         'priority' => 100,
@@ -446,7 +446,7 @@ $wp_customize->add_control('disable_main_banner_on_blog_archive',
 // Frontpage Layout Section.
 $wp_customize->add_section('frontpage_layout_settings',
     array(
-        'title' => esc_html__('Frontpage Layout Settings', 'newsium'),
+        'title' => __('Frontpage Layout Settings', 'newsium'),
         'priority' => 10,
         'capability' => 'edit_theme_options',
         'panel' => 'frontpage_option_panel',
@@ -466,14 +466,14 @@ $wp_customize->add_setting('frontpage_content_alignment',
 
 $wp_customize->add_control('frontpage_content_alignment',
     array(
-        'label' => esc_html__('Frontpage Content alignment', 'newsium'),
-        'description' => esc_html__('Select frontpage content alignment', 'newsium'),
+        'label' => __('Frontpage Content alignment', 'newsium'),
+        'description' => __('Select frontpage content alignment', 'newsium'),
         'section' => 'frontpage_layout_settings',
         'type' => 'select',
         'choices' => array(
-            'frontpage-layout-1' => esc_html__('Default - Frontpage Layout 1 ', 'newsium'),
-            'frontpage-layout-2' => esc_html__('Frontpage Layout 2', 'newsium'),
-            'frontpage-layout-3' => esc_html__('Frontpage Layout 3', 'newsium')
+            'frontpage-layout-1' => __('Default - Frontpage Layout 1 ', 'newsium'),
+            'frontpage-layout-2' => __('Frontpage Layout 2', 'newsium'),
+            'frontpage-layout-3' => __('Frontpage Layout 3', 'newsium')
         ),
         'priority' => 10,
     ));
@@ -489,7 +489,7 @@ $wp_customize->add_setting('frontpage_sticky_sidebar',
 
 $wp_customize->add_control('frontpage_sticky_sidebar',
     array(
-        'label' => esc_html__('Make Frontpage Sidebar Sticky', 'newsium'),
+        'label' => __('Make Frontpage Sidebar Sticky', 'newsium'),
         'section' => 'frontpage_layout_settings',
         'type' => 'checkbox',
         'priority' => 10,

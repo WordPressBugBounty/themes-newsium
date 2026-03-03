@@ -86,7 +86,7 @@ function newsium_customize_register($wp_customize) {
 
     $wp_customize->add_control('site_title_font_size',
         array(
-            'label'    => esc_html__('Site Title Size', 'newsium'),
+            'label'    => __('Site Title Size', 'newsium'),
             'section'  => 'title_tagline',
             'type'     => 'number',
             'priority' => 50,
@@ -108,7 +108,7 @@ function newsium_customize_register($wp_customize) {
 
     $wp_customize->add_control('disable_header_image_tint_overlay',
         array(
-            'label'    => esc_html__('Disable Image Tint/Overlay', 'newsium'),
+            'label'    => __('Disable Image Tint/Overlay', 'newsium'),
             'section'  => 'header_image',
             'type'     => 'checkbox',
             'priority' => 50,
@@ -128,8 +128,8 @@ function newsium_customize_register($wp_customize) {
             $wp_customize,
             'theme_upsell',
             array(
-                'title'    => esc_html__( 'Newsium Pro', 'newsium' ),
-                'pro_text' => esc_html__( 'Upgrade now', 'newsium' ),
+                'title'    => __( 'Newsium Pro', 'newsium' ),
+                'pro_text' => __( 'Upgrade now', 'newsium' ),
                 'pro_url'  => 'https://www.afthemes.com/products/newsium-pro/',
                 'priority'  => 1,
             )
