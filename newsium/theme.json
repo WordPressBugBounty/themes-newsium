@@ -1,30 +1,32 @@
 {
-    "version": 1,
+    "version": 3,
     "settings": {
         "appearanceTools": true,
-        "spacing": {
-            "blockGap": true,
-            "margin": true,
-            "padding": true
-        },
-        "align": {
-            "wide": true,
-            "full": true
-        },
+        "useRootPaddingAwareAlignments": true,
         "layout": {
             "contentSize": "1000px",
             "wideSize": "1500px"
+        },
+        "spacing": {
+            "blockGap": true,
+            "margin": true,
+            "padding": true,
+            "units": ["px", "em", "rem", "vh", "vw"]
         }
     },
     "styles": {
         "blocks": {
             "core/image": {
-                "elements": {
-                    "figure": {
-                        "maxWidth": "100%",
-                        "marginLeft": "auto",
-                        "marginRight": "auto"
+                "spacing": {
+                    "margin": {
+                        "left": "auto",
+                        "right": "auto"
                     }
+                }
+            },
+            "core/heading": {
+                "typography": {
+                    "lineHeight": "1.5"
                 }
             }
         },
@@ -32,6 +34,27 @@
             "link": {
                 "typography": {
                     "textDecoration": "none"
+                }
+            },
+            "button": {
+                "border": {
+                    "radius": "0",
+                    "width": "1px",
+                    "style": "solid",
+                    "color": "rgba(0, 0, 0, 0.3)"
+                },
+                "typography": {
+                    "fontSize": "14px",
+                    "lineHeight": "1",
+                    "fontWeight": "600"
+                },
+                "spacing": {
+                    "padding": {
+                        "top": "9px",
+                        "bottom": "9px",
+                        "left": "15px",
+                        "right": "15px"
+                    }
                 }
             }
         }
