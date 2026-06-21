@@ -73,7 +73,7 @@ function newsium_get_default_theme_options() {
     $defaults['main_banner_section_texts_color'] = '#ffffff';
 
     $defaults['show_trending_carousel_section'] = 1;
-    $defaults['select_trending_carousel_section_mode'] = 'left';
+    $defaults['select_trending_carousel_section_mode'] = 'right';
     $defaults['select_trending_carousel_section_mode_grid'] = 'top';
     $defaults['select_trending_carousel_category'] = 0;
 

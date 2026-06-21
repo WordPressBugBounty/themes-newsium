@@ -37,11 +37,6 @@ if ( ! function_exists( 'newsium_recommended_plugins' ) ) :
                 'required' => false,
             ),
             array(
-                'name'     => esc_html__( 'AF Companion', 'newsium' ),
-                'slug'     => 'af-companion',
-                'required' => false,
-            ),
-            array(
                 'name'     => esc_html__( 'Free Live Chat using 3CX', 'newsium' ),
                 'slug'     => 'wp-live-chat-support',
                 'required' => false,
